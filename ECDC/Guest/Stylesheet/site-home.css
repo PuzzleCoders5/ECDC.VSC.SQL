@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    background-image: linear-gradient(-45deg, #ff9966, #ff5e62);
+    padding: 0 !important;
+    width: 100%;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: 40px;
+    border-radius: 15%;
+    margin-left: 10px;
+}
+
+.navbar li {
+    margin-left: 8px;
+    padding: 0 3px;
+    font-size: 16px;
+}
+
+.navbar li a {
+    color: #fff !important;
+    font-weight: 400;
+}
+
+.navbar-toggler {
+    outline: none !important;
+}
+
+.btn-primary {
+    box-shadow: none;
+    border: 0 !important;
+    background-image: linear-gradient(-45deg, #ff9966, #ff5e62);
+    outline: none;
+}
+
+.banner {
+    background-image: linear-gradient(to right, #ff5e62, #ff9966);
+    color: #fff;
+    padding-top: 5%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.home-title {
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+#banner a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.bottom-img {
+    width: 100%;
+}
+
+/***********************************************************SERVICES*****************************************************************/
+#services {
+    margin-top: 50%;
+}
+
+.service-img {
+    width: 320px;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.services {
+    padding: 20px;
+}
+
+    .services h4 {
+        font-size: 25px;
+        font-weight: 600;
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+/*************************************************************ABOUT US**************************************************************/
+
+#AboutUs {
+    background: #f8f9fa;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.AboutTitle {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 8%;
+}
+
+.title::before {
+    content: '';
+    background: #2ebf91;
+    margin-right: auto;
+    margin-left: auto;
+    height: 5px;
+    width: 200px;
+    display: block;
+    transform: translateY(63px);
+}
+
+.title::after {
+    content: '';
+    background: #02aab0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+    height: 10px;
+    width: 50px;
+    display: block;
+    transform: translateY(8px);
+}
+
+#AboutUs ul li {
+    margin: 10px 0;
+}
+
+#AboutUs ul {
+    margin-left: 20px;
+}
+
+/***********************************************************PROGRAMMES**************************************************/
+
+#Programmes {
+    margin: 100px 0;
+}
+
+/************************************************************SOCIALS********************************************************************/
+#socials {
+    background: #f8f9fa;
+    padding: 100px 0px;
+}
+
+    #socials p {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+.social-media img {
+    width: 60px;
+    transition: 0.5s;
+}
+
+.social-media a:hover img {
+    transform: translateY(10px);
+}
+
+/*************************************************************FOOTER********************************************************/
+
+#footer {
+    background-image: linear-gradient(to right, #ff5e62, #ff9966);
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.footer-img {
+    width: 100%;
+}
+
+.footer-box {
+    padding: 20px;
+}
+
+    .footer-box img {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+
+    .footer-box .form-control {
+        box-shadow: none !important;
+        border: none;
+        border-radius: 0;
+        margin-top: 25px;
+        max-width: 250px;
+    }
+
+    .footer-box .btn-primary {
+        box-shadow: none !important;
+        border: none;
+        border-radius: 0;
+        margin-top: 30px;
+        width: 120px;
+        height: 40px;
+        background-image: linear-gradient(to right, #159957, #00f260);
+    }
+
+hr {
+    background-color: #fff;
+}
+
+.copyright {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}

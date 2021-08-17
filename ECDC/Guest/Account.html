@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Access Account</title>
+    <link href="Stylesheet/site-account.css" rel="stylesheet" />
+    <script
+    src="https://kit.fontawesome.com/64d58efce2.js"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <!----Sign In Form---->
+                <form action="#" class="sign-in-form">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-key"></i>
+                        <input type="password" placeholder="Password" id="password" required />
+                        <span><i class="fas fa-eye" aria-hidden="true" onclick="toggle()" id="eye"></i></span>
+                    </div>
+                    <p>Forgot Password? <a href="ResetPassword.html">Click here </a></p>
+                    <input type="submit" value="Login" class="btn solid button" />
+                </form>
+
+                <!----Sign Up Form---->
+                <form action="#" class="sign-up-form">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="email" placeholder="First Name" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="email" placeholder="Last Name" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-tag"></i>
+                        <input type="email" value="Parent" disabled />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" id="password2" required />
+                        <span><i class="fas fa-eye" aria-hidden="true" onclick="toggle2()" id="eye2"></i></span>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Confirm Password" id="password3" required />
+                        <span><i class="fas fa-eye" aria-hidden="true" onclick="toggle3()" id="eye3"></i></span>
+                    </div>
+                    <input id="signedUp" type="button" name="signedUp" class="btn button" value="Sign up" />
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New here ?</h3>
+                    <p>
+                        You will need to an account to access the system. Click the button below to create your ECD account now.
+                    </p>
+                    <button class="btn transparent button" id="sign-up-btn">
+                        Sign up
+                    </button>
+                </div>
+                <img src="guest-images/—Pngtree—man work from home_5440310.png" class="image" alt="" />
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>One of us ?</h3>
+                    <p>
+                        If you already have an account, click the button below and enter your credentials to access the system
+                    </p>
+                    <button class="btn transparent button" id="sign-in-btn">
+                        Sign in
+                    </button>
+                </div>
+                <img src="guest-images/—Pngtree—hand drawn cartoon computer video_5364437.png" class="image" alt="" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="Javascript/app.js"></script>
+<script>
+    var state = false;
+    function toggle() {
+        if (state) {
+            document.getElementById("password").setAttribute("type", "password");
+            state = false;
+        }
+        else {
+            document.getElementById("password").setAttribute("type", "text");
+            state = true;
+        }
+    }
+</script> <!--Login password visibility-->
+<script>
+    var state = false;
+    function toggle2() {
+        if (state) {
+            document.getElementById("password2").setAttribute("type", "password");
+            state = false;
+        }
+        else {
+            document.getElementById("password2").setAttribute("type", "text");
+            state = true;
+        }
+    }
+</script> <!--Create password visibility-->
+<script>
+    var state = false;
+    function toggle3() {
+        if (state) {
+            document.getElementById("password3").setAttribute("type", "password");
+            state = false;
+        }
+        else {
+            document.getElementById("password3").setAttribute("type", "text");
+            state = true;
+        }
+    }
+</script> <!--Confirm password visibility-->

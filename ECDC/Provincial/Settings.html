@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programmes</title>
+    <link href="Stylesheet/site-setting.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body id="body">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 pb-5">
+                <!----Settings Menu---->
+                <div class="author-card pb-3">
+                    <div class="author-card-cover">
+                        <div class="author-card-profile text-center">
+                            <div class="author-card-avatar">
+                                <img src="provincial-images/user-icon-metro-14.jpg" alt="" />
+                            </div>
+                            <div class="author-card-details">
+                                <h5 class="author-card-name">Sakhekile Soyamba</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wizard">
+                    <nav class="list-group list-group-flush options">
+                        <a class="list-group-item active" data-bs-toggle="tab" href="#personal">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <i class="fas fa-user mr-1"></i>
+                                    <div class="d-inline-block font-weight-normal">Personal</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item" data-bs-toggle="tab" href="#account">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <i class="fas fa-key mr-1"></i>
+                                    <div class="d-inline-block font-weight-normal">Account</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item" data-bs-toggle="tab" href="#security">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <i class="fas fa-shield-alt mr-1"></i>
+                                    <div class="d-inline-block font-weight-normal">Security</div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown list-group-item">
+                            <label class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-question"></i> Help
+                            </label>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item d-inline-block" data-bs-toggle="tab" href="#helpCentre"><i class="fas fa-question-circle mr-1"></i>Help centre</a></li>
+                                <li><a class="dropdown-item d-inline-block"><i class="fas fa-file-signature mr-1"></i>Terms and Privacy policy</a></li>
+                                <li><a class="dropdown-item d-inline-block"><i class="fas fa-users mr-1"></i>Frequently asked questions</a></li>
+                                <li><a class="dropdown-item d-inline-block"><i class="fas fa-exclamation-circle mr-1"></i>System Information</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!----Change Info Section---->
+            <div class="col-lg-8 pb-5">
+                <div class="tab-content">
+                    <!----Personal Section---->
+                    <div class="tab-pane active" id="personal">
+                        <form class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="account-fn">First Name</label>
+                                    <input class="form-control" type="text" value="Sakhekile" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="account-fn">Last Name</label>
+                                    <input class="form-control" type="text" value="Soyamba" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="account-fn">Location</label>
+                                    <input class="form-control" type="text" placeholder="Durban, KwaZulu Natal" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="account-fn">Profile Picture</label>
+                                    <input class="form-control" type="file" />
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="account-fn">Bio</label>
+                                    <input class="form-control" type="text" placeholder="Something about yourself..." />
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div class="small text-muted text-center">
+                                        If you wish to change the information that is not displayed here, you will need to contact the centre with the new relevant information.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <hr class="mt-2 mb-3" />
+                                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <button class="btn btn-outline-dark" type="reset">Reset</button>
+                                    <button class="btn btn-outline-primary" type="submit">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!----Account Section---->
+                    <div class="tab-pane" id="account">
+                        <form class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="account-fn">Email</label>
+                                    <input class="form-control" type="email" value="coders3cd@ecd.com" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="account-fn">Work Number</label>
+                                    <input class="form-control" type="tel" placeholder="Optional" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="account-fn">Phone Number</label>
+                                    <input class="form-control" type="tel" value="08347740521" />
+                                    <small class="form-text text-muted">Please keep your phone number updated at all times.</small>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <hr class="mt-2 mb-3" />
+                                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <button class="btn btn-outline-dark" type="reset">Reset</button>
+                                    <button class="btn btn-outline-primary" type="submit">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!----Security Section---->
+                    <div class="tab-pane" id="security">
+                        <form class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="account-fn">Old Password</label>
+                                    <input class="form-control" type="password" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="account-fn">New Password</label>
+                                    <input class="form-control" type="password" placeholder="Must be atleast 8 characters long." />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="account-fn">Confirm Password</label>
+                                    <input class="form-control" type="password" placeholder="Re-enter your new password." />
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="account-fn">Security Questions</label>
+                                    <p class="small text-muted mt-2">
+                                        Security questions adds an additional layer of security to your account by asking questions that only you can set answers to. This method can be used to recover password and/or email.
+                                        <a href="#">Click here </a>to setup.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <hr class="mt-2 mb-3" />
+                                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <button class="btn btn-outline-dark" type="reset">Reset</button>
+                                    <button class="btn btn-outline-primary" type="submit">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!----Help Centre---->
+                    <!----Help Centre Section---->
+                    <div class="tab-pane" id="helpCentre">
+                        <form class="row">
+                            <div class="col-md-12">
+                                <div class="panel-group drop-accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a class="collapse-controle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    Verification
+                                                    <span class="expand-icon-wrap"><i class="fa expand-icon"></i></span>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+                                            <div class="panel-body">
+                                                <div class="panel-body-icon"><i class="fa fa-file-contract"></i></div>
+                                                <h2>Requirements</h2>
+                                                <br />
+                                                <ul class="ml-4">
+                                                    <li>You must use a phone number that you own to ensure the centre can contact you at given moment.</li>
+                                                    <li>You must have any call-blocking settings, apps or task killers disabled.</li>
+                                                    <li>You must use your personal email for us to send news feed or update to the center straight to the email address supplied.</li>
+                                                    <li>The documents submitted must be valid and submitted in order for you to see the programmes you have registered for.</li>
+                                                </ul>
+                                                <div class="panel-body-icon"><i class="fa fa-pen-nib"></i></div>
+                                                <br />
+                                                <h2>Registration</h2>
+                                                <ul class="ml-4">
+                                                    <li>The screen appears when you're creating a new account or signing in on the ECD home page.</li>
+                                                    <li>When you have created your account/entered the system, you must register your child to the centre in order to enrol to the programmes. Without this, you will have very limited navigation options.</li>
+                                                    <li>At this point, you should have successfully registered into the system and see your child/children information on your account. Should there be any further complication, contact the centre for assistance regarding the issue.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a class="collapse-controle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Account and Profile
+                                                    <span class="expand-icon-wrap"><i class="fa expand-icon"></i></span>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+                                            <div class="panel-body">
+                                                <div class="panel-body-icon"><i class="fa fa-trash-alt"></i></div>
+                                                <h2>How to delete account</h2>
+                                                Epsum factorial non deposit quid pro quo hic escorol. Olypian rrels et gorilla congolium sic ad Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla.
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="panel-body-icon"><i class="fa fa-edit"></i></div>
+                                                <h2>How to edit your profile</h2>
+                                                Epsum factorial non deposit quid pro quo hic escorol. Olypian rrels et gorilla congolium sic ad Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla.
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="panel-body-icon"><i class="fa fa-paper-plane"></i></div>
+                                                <h2>About sending messages</h2>
+                                                Epsum factorial non deposit quid pro quo hic escorol. Olypian rrels et gorilla congolium sic ad Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla.
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed collapse-controle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Security and Privacy
+                                                    <span class="expand-icon-wrap"><i class="fa expand-icon"></i></span>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+                                            <div class="panel-body">
+                                                <div class="panel-body-icon"><i class="fa fa-cogs"></i></div>
+                                                Epsum factorial non deposit quid pro quo hic escorol. Olypian rrels et gorilla congolium sic ad Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingFour">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed collapse-controle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                    App benifits tittle four goes here
+                                                    <span class="expand-icon-wrap"><i class="fa expand-icon"></i></span>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="false">
+                                            <div class="panel-body">
+                                                <div class="panel-body-icon"><i class="fa fa-coffee"></i></div>
+                                                Epsum factorial non deposit quid pro quo hic escorol. Olypian rrels et gorilla congolium sic ad Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let bars = document.querySelector("#bars");
+    let sidebar = document.querySelector(".sidebar");
+
+    bars.onclick = function () {
+        sidebar.classList.toggle("active");
+    }
+</script>

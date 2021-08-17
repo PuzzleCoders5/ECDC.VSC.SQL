@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="Stylesheet/site-reglist.css" rel="stylesheet" />
+    <link href="Stylesheet/site-searchbtn.css" rel="stylesheet" />
+    <link href="Stylesheet/site-booking.css" rel="stylesheet"/>
+    <title>Extra Time Bookings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+</head>
+<body id="body">
+    <section class="container pt-3 mb-3">
+
+        <!----Search button---->
+        <div class="search-box">
+            <input type="text" placeholder="Type to search..." />
+            <div class="search-btn">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+
+        <h2 class="h3 block-title text-center"><a href="" data-bs-target="#book" data-bs-toggle="modal"="Booking"><i class="fas fa-plus"></i></a> Extra Time Bookings</h2>
+        <p class="text-center">Please note your extra time booking(s) will be displayed here.</p>
+        <div class="row pt-5 mt-30">
+            <!----Card---->
+            <div class="col-lg-4 col-sm-6 mb-30 pb-5">
+                <div class="card">
+                    <div class="box-shadow bg-white rounded-circle mx-auto text-center" style="width: 90px; height: 90px; margin-top: -45px;"><i class="fa fa-user-circle fa-3x head-icon"></i></div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title pt-1">Pupil Name</h3>
+                        <p class="card-text text-sm">You have requested to book for extra time. This request will be processed by one of our teachers in 1 to 3 days. Please continue to be patient to receive a response.</p>
+                        <p>2021/06/09</p>
+                        <a href="" class="text-sm text-uppercase font-weight-bold" style="text-decoration:none;">Cancel Booking&nbsp;<i class="fe-icon-arrow-right"></i></a><br />
+                        <a href="" data-bs-target="#app-status" data-bs-toggle="modal" class="text-sm text-uppercase font-weight-bold" style="text-decoration:none;">Check Status</a>
+                    </div>
+                </div>
+            </div>
+
+            <!----Card---->
+            <div class="col-lg-4 col-sm-6 mb-30 pb-5">
+                <div class="card">
+                    <div class="box-shadow bg-white rounded-circle mx-auto text-center" style="width: 90px; height: 90px; margin-top: -45px;"><i class="fa fa-user-circle fa-3x head-icon"></i></div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title pt-1">Pupil Name</h3>
+                        <p class="card-text text-sm">You have requested to book for extra time. This request will be processed by one of our teachers in 1 to 3 days. Please continue to be patient to receive a response.</p>
+                        <p>2021/06/16</p>
+                        <a href="" class="text-sm text-uppercase font-weight-bold" style="text-decoration:none;">Cancel Booking&nbsp;<i class="fe-icon-arrow-right"></i></a><br />
+                        <a href="" data-bs-target="#app-status" data-bs-toggle="modal" class="text-sm text-uppercase font-weight-bold" style="text-decoration:none;">Check Status</a>
+                    </div>
+                </div>
+            </div>
+
+            <!----Card---->
+            <div class="col-lg-4 col-sm-6 mb-30 pb-5">
+                <div class="card">
+                    <div class="box-shadow bg-white rounded-circle mx-auto text-center" style="width: 90px; height: 90px; margin-top: -45px;"><i class="fa fa-user-circle fa-3x head-icon"></i></div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title pt-1">Pupil Name</h3>
+                        <p class="card-text text-sm">You have requested to book for extra time. This request will be processed by one of our teachers in 1 to 3 days. Please continue to be patient to receive a response.</p>
+                        <p>2021/06/21</p>
+                        <a href="" class="text-sm text-uppercase font-weight-bold" style="text-decoration:none;">Cancel Booking&nbsp;<i class="fe-icon-arrow-right"></i></a><br />
+                        <a href="" data-bs-target="#app-status" data-bs-toggle="modal" class="text-sm text-uppercase font-weight-bold" style="text-decoration:none;">Check Status</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<script>
+    let bars = document.querySelector("#bars");
+    let sidebar = document.querySelector(".sidebar");
+
+    bars.onclick = function () {
+        sidebar.classList.toggle("active");
+    }
+</script>
+
+
+<!----Search Animation Javascript---->
+<script>
+    const searchBtn = document.querySelector(".search-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    const searchBox = document.querySelector(".search-box");
+    const searchInput = document.querySelector("input");
+
+    searchBtn.onclick = () => {
+        searchBox.classList.add("active");
+        searchInput.classList.add("active");
+        searchBtn.classList.add("active");
+        cancelBtn.classList.add("active");
+    }
+    cancelBtn.onclick = () => {
+        searchBox.classList.remove("active");
+        searchInput.classList.remove("active");
+        searchBtn.classList.remove("active");
+        cancelBtn.classList.remove("active");
+    }
+
+</script>
+
+<!----Show Application Status Modal---->
+<div class="modal fade" id="app-status" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title" id="exampleModalLabel">Status</h6>
+            </div>
+            <div class="modal-body">
+                <h4 class="text-center"><b>Booking Status</b></h4>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label class="col-form-label">Date:</label>
+                            <p>2021/02/04</p>
+                        </div>
+                        <div class="mb-3">
+                            <label class="col-form-label">Status:</label>
+                            <p>Waiting for response...</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label class="col-form-label">Pupil Name:</label>
+                            <p>Siyabonga Ntuli</p>
+                        </div>
+                        <div class="mb-3">
+                            <label class="col-form-label">ETA:</label>
+                            <p>14:45</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="mb-3">
+                            <label class="col-form-label">Comment:</label>
+                            <p>I will be having work meeting and cannot find someone to help pick up (Name).</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----Show Meetings Modal---->
+<div class="modal fade" id="book" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title" id="exampleModalLabel">Bookings</h6>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <header>Book Extra Time</header>
+                    <div class="form-outer">
+                        <form>
+                            <div class="page">
+                                <div class="caption">
+                                    <p>
+                                        You can book for extra time in the centre for your child should there be complications
+                                        during the day.
+                                    </p>
+                                </div>
+                                <div class="title text-center">Required Information</div>
+                                <div class="field">
+                                    <div class="label">Pupil Name</div>
+                                    <select>
+                                        <option>Student Name 1</option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <div class="label">Date</div>
+                                    <input type="date"/>
+                                </div>
+                                <div class="field">
+                                    <div class="label">ETA</div>
+                                    <input type="time" />
+                                </div>
+                                <div class="field">
+                                    <div class="label">Comment</div>
+                                    <input type="text" placeholder="Reason for time extension" />
+                                </div>
+                                <div class="field">
+                                    <div class="label">Password</div>
+                                    <input type="password" placeholder="Enter password to confirm action" />
+                                </div>
+                                <div class="field">
+                                    <button type="button" id="btnBook">Book</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

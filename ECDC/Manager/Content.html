@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teachers</title>
+    <link href="Stylesheet/site-searchbtn.css" rel="stylesheet" />
+    <link href="Stylesheet/site-content.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+</head>
+<body id="body">
+    <div class="container mt-3">
+        <!----Search button---->
+        <div class="search-box">
+            <input type="text" placeholder="Type to search..." />
+            <div class="search-btn">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <br>
+
+        <div class="title">
+            <h1 class="text-center">Programme Content</h1>
+            <p class="text-center">Choose the content from the list below and add the content under a certain term number. Note that you cannot delete the content of that programme and must all be assigned to certain term number.</p>
+        </div>
+
+        <!----Content Box---->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="well profile">
+                    <!----Header---->
+                    <img src="manager-images/66240.jpg" alt="">
+                    <h3 class="name">Reciting Alphabets</h3>
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#tab" data-bs-toggle="tab">Overview</a>
+                            <a href="#tab2" data-bs-toggle="tab"> Details</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <!----Overview Tab---->
+                        <div class="tab-pane active" id="tab">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                    <p>
+                                        <br>
+                                        Write some sort of description about the conctent in here. Just a short summary that you can think of. This is supposed to come from the regional coordinator when adding the content.
+                                        Write some sort of description about the conctent in here. Just a short summary that you can think of. This is supposed to come from the regional coordinator when adding the content.
+                                        Write some sort of description about the conctent in here. Just a short summary that you can think of. This is supposed to come from the regional coordinator when adding the content.
+                                        <br>
+                                    </p>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!----Details Tab---->
+                        <div class="tab-pane" id="tab2">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="basic">
+                                            <form class="form-horizontal" role="form">
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">Programme</label>
+                                                    <div class="col-lg-10">
+                                                        <input type="text" class="form-control" value="Reading and Writing" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">Content</label>
+                                                    <div class="col-lg-10">
+                                                        <input type="text" class="form-control" value="Reciting alphabets" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">Teacher</label>
+                                                    <div class="col-lg-10">
+                                                        <input type="text" class="form-control" value="Richard Waterson" disabled />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">Term No.</label>
+                                                    <div class="col-lg-10">
+                                                        <select class="form-control">
+                                                            <option>Term 1</option>
+                                                            <option>Term 2</option>
+                                                            <option>Term 3</option>
+                                                            <option>Term 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="form-group">
+                                                    <div class="col-lg-10">
+                                                        <button type="submit" class="btn btn-outline-primary">Submit</button>
+                                                        <button type="reset" class="btn btn-outline-dark">Reset</button>
+                                                        <a asp-controller="Manager" asp-action="Programmes" class="btn btn-danger">Cancel</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <!----Content Box---->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="well profile">
+                    <!----Header---->
+                    <img src="manager-images/66240.jpg" alt="">
+                    <h3 class="name">Writing Letters</h3>
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#tab4" data-bs-toggle="tab">Overview</a>
+                            <a href="#tab3" data-bs-toggle="tab"> Details</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <!----Overview Tab---->
+                        <div class="tab-pane active" id="tab4">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                    <p>
+                                        <br>
+                                        Write some sort of description about the conctent in here. Just a short summary that you can think of. This is supposed to come from the regional coordinator when adding the content.
+                                        Write some sort of description about the conctent in here. Just a short summary that you can think of. This is supposed to come from the regional coordinator when adding the content.
+                                        Write some sort of description about the conctent in here. Just a short summary that you can think of. This is supposed to come from the regional coordinator when adding the content.
+                                        <br>
+                                    </p>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!----Details Tab---->
+                        <div class="tab-pane" id="tab3">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="basic">
+                                            <form class="form-horizontal" role="form">
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">Programme</label>
+                                                    <div class="col-lg-10">
+                                                        <input type="text" class="form-control" value="Reading and Writing" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">Content</label>
+                                                    <div class="col-lg-10">
+                                                        <input type="text" class="form-control" value="Writing Lettes" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">Teacher</label>
+                                                    <div class="col-lg-10">
+                                                        <input type="text" class="form-control" value="Richard Waterson" disabled />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">Term No.</label>
+                                                    <div class="col-lg-10">
+                                                        <select class="form-control">
+                                                            <option>Term 1</option>
+                                                            <option>Term 2</option>
+                                                            <option>Term 3</option>
+                                                            <option>Term 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-lg-10">
+                                                        <button type="submit" class="btn btn-outline-primary">Submit</button>
+                                                        <button type="reset" class="btn btn-outline-dark">Reset</button>
+                                                        <a asp-controller="Manager" asp-action="Programmes" class="btn btn-danger">Cancel</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+<!----Sidebar Animation Javascript---->
+<script>
+    let bars = document.querySelector("#bars");
+    let sidebar = document.querySelector(".sidebar");
+
+    bars.onclick = function () {
+        sidebar.classList.toggle("active");
+    }
+</script>
+
+<!----Search Animation Javascript---->
+<script>
+    const searchBtn = document.querySelector(".search-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    const searchBox = document.querySelector(".search-box");
+    const searchInput = document.querySelector("input");
+
+    searchBtn.onclick = () => {
+        searchBox.classList.add("active");
+        searchInput.classList.add("active");
+        searchBtn.classList.add("active");
+        cancelBtn.classList.add("active");
+    }
+    cancelBtn.onclick = () => {
+        searchBox.classList.remove("active");
+        searchInput.classList.remove("active");
+        searchBtn.classList.remove("active");
+        cancelBtn.classList.remove("active");
+    }
+
+</script>

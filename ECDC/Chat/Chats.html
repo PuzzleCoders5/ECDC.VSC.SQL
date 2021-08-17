@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Stylesheet/site-chat.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+    src="https://kit.fontawesome.com/64d58efce2.js"
+    crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    <div>
+        <!---I DELETED THE "wrapper" CLASS BECAUSE IT SHUFFLED EVERYTHING IN THIS FORM---->
+        <section class="chat-area">
+            <header>
+                <img src="Images/user-icon-metro-14.jpg" />
+                <a class="back-icon" asp-controller="Client" asp-action="Users"><i class="fas fa-arrow-left"></i></a>
+                <div class="details">
+                    <p class="character">Zipho Ntuli</p>
+                    <p class="status">Active Now</p>
+                </div>
+            </header>
+            <div class="chat-box">
+                <div class="chat outgoing">
+                    <div class="details">
+                        <p>the ship is coming in. We will dock at the harbor by noon tomorrow.</p>
+                    </div>
+                </div>
+                <div class="chat incoming">
+                    <img src="Images/user-icon-metro-14.jpg" />
+                    <div class="details">
+                        <p>There is a lot of testing to be done here. For whatever reason, I'm finding issues.</p>
+                    </div>
+                </div>
+                <div class="chat outgoing">
+                    <div class="details">
+                        <p>Of course.</p>
+                    </div>
+                </div>
+                <div class="chat incoming">
+                    <img src="Images/user-icon-metro-14.jpg" />
+                    <div class="details">
+                        <p>We will blindly follow along for now</p>
+                    </div>
+                </div>
+                <div class="chat outgoing">
+                    <div class="details">
+                        <p>There will certainly be challenges up ahead so, be wary of it. Most of this will be the javascript and the database which will require a lot of conditioning shit.</p>
+                    </div>
+                </div>
+                <div class="chat incoming">
+                    <img src="Images/user-icon-metro-14.jpg" />
+                    <div class="details">
+                        <p>We will blindly follow along for now</p>
+                    </div>
+                </div>
+                <div class="chat incoming">
+                    <img src="Images/user-icon-metro-14.jpg" />
+                    <div class="details">
+                        <p>We will blindly follow along for now and again</p>
+                    </div>
+                </div>
+                <div class="chat incoming">
+                    <img src="Images/user-icon-metro-14.jpg" />
+                    <div class="details">
+                        <p>We will blindly follow along for now</p>
+                    </div>
+                </div>
+            </div>
+            <div action="#" class="typing-area">
+                <input type="text" placeholder="Type a message" />
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
+<script>
+    let bars = document.querySelector("#bars");
+    let sidebar = document.querySelector(".sidebar");
+
+    bars.onclick = function () {
+        sidebar.classList.toggle("active");
+    }
+</script>

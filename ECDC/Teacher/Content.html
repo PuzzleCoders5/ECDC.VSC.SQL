@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content</title>
+    <link href="Stylesheet/content.css" rel="stylesheet" />
+    <link href="Stylesheet/site-searchbtn.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+</head>
+<body id="body">
+    <div class="container mt-3">
+        <!----Search button---->
+        <div class="search-box">
+            <input type="text" placeholder="Type to search..." />
+            <div class="search-btn">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <br>
+
+        <div class="title">
+            <h2 class="text-center">Programme Content</h2>
+            <p class="text-center">Here you have a list of activities under this programme displayed. Select the button to indicate completion of the activity and</p>
+        </div>
+        <div class="row">
+            <!----Card---->
+            <div class="col-lg-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-text" data-background="color" data-color="blue" data-radius="none">
+                        <div class="content">
+                            <h6 class="category">Sports and Reacreational</h6>
+                            <h4 class="title">Gymnastics</h4>
+                            <p class="description">It doesnt really matter. What you have to type here is the description of the activity that that teacher has opened. She must along the way see everything that must be covered on this term (term 1).</p>
+                            <button href="" data-bs-target="#content" data-bs-toggle="modal" type="button" class="btn btn-outline-dark modal-btn">Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!----Card---->
+            <div class="col-lg-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-text" data-background="color" data-color="green" data-radius="none">
+                        <div class="content">
+                            <h6 class="category">Sports and Reacreational</h6>
+                            <h4 class="title">Running</h4>
+                            <p class="description">It doesnt really matter. What you have to type here is the description of the activity that that teacher has opened. She must along the way see everything that must be covered on this term (term 1).</p>
+                            <button href="#" type="button" class="btn btn-outline-dark">Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!----Card---->
+            <div class="col-lg-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-text" data-background="color" data-color="brown" data-radius="none">
+                        <div class="content">
+                            <h6 class="category">Sports and Reacreational</h6>
+                            <h4 class="title">Sport of choice</h4>
+                            <p class="description">It doesnt really matter. What you have to type here is the description of the activity that that teacher has opened. She must along the way see everything that must be covered on this term (term 1).</p>
+                            <button href="#" type="button" class="btn btn-outline-dark">Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!----Sidebar Animation Javascript---->
+<script>
+    let bars = document.querySelector("#bars");
+    let sidebar = document.querySelector(".sidebar");
+
+    bars.onclick = function () {
+        sidebar.classList.toggle("active");
+    }
+</script>
+
+<!----Search Animation Javascript---->
+<script>
+    const searchBtn = document.querySelector(".search-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    const searchBox = document.querySelector(".search-box");
+    const searchInput = document.querySelector("input");
+
+    searchBtn.onclick = () => {
+        searchBox.classList.add("active");
+        searchInput.classList.add("active");
+        searchBtn.classList.add("active");
+        cancelBtn.classList.add("active");
+    }
+    cancelBtn.onclick = () => {
+        searchBox.classList.remove("active");
+        searchInput.classList.remove("active");
+        searchBtn.classList.remove("active");
+        cancelBtn.classList.remove("active");
+    }
+
+</script>
+
+<!----Show Meetings Modal---->
+<div class="modal fade" id="content" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title" id="exampleModalLabel">Content</h6>
+            </div>
+            <div class="modal-body">
+                <h4><b>Update Content</b></h4>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label class="col-form-label">Start Date:</label>
+                            <input type="date" class="form-control"/>
+                        </div>
+                        <div class="mb-3">
+                            <label class="col-form-label">End Date:</label>
+                            <input type="date" class="form-control"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label class="col-form-label">Programme:</label>
+                            <input type="text" class="form-control"/>
+                        </div>
+                        <div class="mb-3">
+                            <label class="col-form-label">Teacher:</label>
+                            <input type="text" class="form-control"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

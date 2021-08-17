@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Settings</title>
+    <link href="Stylesheet/site-setting.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+</head>
+<body id="body">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 pb-5">
+                <!----Settings Menu---->
+                <div class="author-card pb-3">
+                    <div class="author-card-cover">
+                        <div class="author-card-profile text-center">
+                            <div class="author-card-avatar">
+                                <img src="Chat/Images/user-icon-metro-14.jpg" alt="" />
+                            </div>
+                            <div class="author-card-details">
+                                <h5 class="author-card-name">Zipho Ntuli</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wizard">
+                    <nav class="list-group list-group-flush options">
+                        <a class="list-group-item active" data-bs-toggle="tab" href="#personal">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <i class="fas fa-user mr-1"></i>
+                                    <div class="d-inline-block font-weight-normal">Personal</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item" data-bs-toggle="tab" href="#account">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <i class="fas fa-key mr-1"></i>
+                                    <div class="d-inline-block font-weight-normal">Account</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item" data-bs-toggle="tab" href="#security">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <i class="fas fa-shield-alt mr-1"></i>
+                                    <div class="d-inline-block font-weight-normal">Security</div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown list-group-item">
+                            <label class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-question"></i> Help
+                            </label>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item d-inline-block" data-bs-toggle="tab" href="#helpCentre"><i class="fas fa-question-circle mr-1"></i>Help centre</a></li>
+                                <li><a class="dropdown-item d-inline-block"><i class="fas fa-file-signature mr-1"></i>Terms and Privacy policy</a></li>
+                                <li><a class="dropdown-item d-inline-block"><i class="fas fa-users mr-1"></i>Frequently asked questions</a></li>
+                                <li><a class="dropdown-item d-inline-block"><i class="fas fa-exclamation-circle mr-1"></i>System Information</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!----Change Info Section---->
+            <div class="col-lg-8 pb-5">
+                <div class="tab-content">
+                    <!----Personal Section---->
+                    <div class="tab-pane active" id="personal">
+                        <form class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="account-fn">First Name</label>
+                                    <input class="form-control" type="text" value="Lungelo" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="account-fn">Last Name</label>
+                                    <input class="form-control" type="text" value="Ntuli" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="account-fn">Location</label>
+                                    <input class="form-control" type="text" placeholder="Durban, KwaZulu Natal" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="account-fn">Profile Picture</label>
+                                    <input class="form-control" type="file" />
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="account-fn">Bio</label>
+                                    <input class="form-control" type="text" placeholder="Something about yourself..." />
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div class="small text-muted text-center">
+                                        If you wish to change the information that is not displayed here, you will need to contact the centre with the new relevant information.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <hr class="mt-2 mb-3" />
+                                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <button class="btn btn-outline-dark" type="reset">Reset</button>
+                                    <button class="btn btn-outline-primary" type="submit">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!----Account Section---->
+                    <div class="tab-pane" id="account">
+                        <form class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="account-fn">Email</label>
+                                    <input class="form-control" type="email" value="coders3cd@ecd.com" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="account-fn">Work Number</label>
+                                    <input class="form-control" type="tel" placeholder="Optional" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="account-fn">Phone Number</label>
+                                    <input class="form-control" type="tel" value="08347740521" />
+                                    <small class="form-text text-muted">Please keep your phone number updated at all times.</small>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <hr class="mt-2 mb-3" />
+                                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <button class="btn btn-outline-dark" type="reset">Reset</button>
+                                    <button class="btn btn-outline-primary" type="submit">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!----Security Section---->
+                    <div class="tab-pane" id="security">
+                        <form class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="account-fn">Old Password</label>
+                                    <input class="form-control" type="password" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="account-fn">New Password</label>
+                                    <input class="form-control" type="password" placeholder="Must be atleast 8 characters long." />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="account-fn">Confirm Password</label>
+                                    <input class="form-control" type="password" placeholder="Re-enter your new password." />
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="account-fn">Security Questions</label>
+                                    <p class="small text-muted mt-2">
+                                        Security questions adds an additional layer of security to your account by asking questions that only you can set answers to. This method can be used to recover password and/or email.
+                                        <a href="#">Click here </a>to setup.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <hr class="mt-2 mb-3" />
+                                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <button class="btn btn-outline-dark" type="reset">Reset</button>
+                                    <button class="btn btn-outline-primary" type="submit">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!----Help Centre---->
+                    <!----Help Centre Section---->
+                    <div class="tab-pane" id="helpCentre">
+                        <form class="row">
+                            <div class="col-md-12">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                          Accordion Item #1
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                          Accordion Item #2
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                          Accordion Item #3
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="~/lib/jquery/dist/accordion.js"></script>
+<script>
+    let bars = document.querySelector("#bars");
+    let sidebar = document.querySelector(".sidebar");
+
+    bars.onclick = function () {
+        sidebar.classList.toggle("active");
+    }
+</script>

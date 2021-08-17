@@ -1,0 +1,93 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
+}
+.main-content{
+    outline:none;
+    margin-left: 275px;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0 0 8px rgba(230, 230, 230, 230);
+}
+.main-content .title .header {
+    font-size: 40px;
+    font-weight: 600;
+}
+.main-content .info-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.main-content .info-card .cards{
+    width: 380px;
+    min-height: 220px;
+    padding: 20px;
+    margin-left: 20px;
+    background: linear-gradient(to right, #000428, #004e92);
+    border-radius: 15px;
+    color: #fff;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+.main-content .info-card .cards::before,
+.main-content .info-card .cards::after{
+    content:"";
+    position: absolute;
+    top: -5%;
+    right: -5%;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 100%;
+}
+.main-content .info-card .cards::after{
+    top: auto;
+    bottom: -5%;
+    right: -10%;
+}
+.main-content .info-card .cards .card-icon{
+    margin-bottom: 15px;
+    width: 70px;
+    height: 60px;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 8px #fff;
+}
+.main-content .info-card .cards .card-icon span i {
+    font-size: 20px;
+}
+.main-content .info-card .cards .card-detail {
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+.main-content .main-table .title{
+    margin: 15px 0;
+}
+.main-content .report-table {
+    display: grid;
+}
+.main-content .report-table table thead tr td {
+    padding: 20px 0;
+    font-weight: 600;
+    color: #000;
+}
+.main-content .report-table table tbody tr td{
+    padding: 15px 0;
+}

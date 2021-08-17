@@ -1,0 +1,89 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container {
+    width: 420px;
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+    padding: 50px 35px 10px 35px;
+}
+.container header {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+}
+.container .form-outer {
+    width: 100%;
+    overflow: hidden;
+
+}
+.form-outer form {
+    display: flex;
+    width: 400%;
+}
+.form-outer form .page {
+    width: 25%;
+    transition: margin-left 0.5s ease-in-out;
+}
+.form-outer form .page .title {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 500;
+}
+.form-outer form .page .field {
+    height: 45px;
+    width: 330px;
+    margin: 45px 0;
+    position: relative;
+    display: flex;
+    right: -50px;
+}
+.form-outer form .page .field input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-left: 15px;
+}
+form .page .field select {
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.form-outer form .page .field .label {
+    position: absolute;
+    top: -30px;
+    font-weight: 500;
+}
+.page .field button {
+    width: 100%;
+    height: calc(100% + 5px);
+    margin-top: -20px;
+    border: none;
+    background: linear-gradient(#ff9966, #ff5e62);
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    font-weight: 500;
+}
+.page .field button:hover{
+    background: linear-gradient(#ff5e62, #ff9966);
+}

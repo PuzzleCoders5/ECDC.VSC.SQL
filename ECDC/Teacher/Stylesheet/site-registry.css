@@ -1,0 +1,15 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    margin-top: 40px;
+    background: #eee;
+}
+.title h1 {
+    font-size: 25px;
+}
+.class-list > tbody > tr > td {
+    padding: 12px 8px;
+}
